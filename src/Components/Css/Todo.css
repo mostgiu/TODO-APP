@@ -1,13 +1,18 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .todo {
   width: 600px;
-  min-height: 723px;
+  min-height: 400px;
   border-radius: 20px;
   background: #fff;
   margin: auto;
   margin-top: 174px;
   display: flex;
   flex-direction: column;
-  padding: 0px 44px;
+  padding: 0 30px;
   padding-bottom: 30px;
   margin-bottom: 100px;
 }
@@ -34,8 +39,8 @@
   padding-left: 35px;
   font-size: 20px;
 }
-.todo-add-btn{
-  border-radius: 50px;
+.todo-add-btn {
+  border-radius: 50%;
   background: #ff6739;
   width: 187px;
   height: 80px;
@@ -46,4 +51,44 @@
   color: #fff;
   font-size: 26px;
   cursor: pointer;
+}
+
+@media (min-width: 375px) {
+  .todo {
+    max-width: 350px;
+  }
+  .todo-add-btn{margin-left:-50px ;
+  padding: 0 5px;
+    border-radius: 10%;
+}
+}
+
+@media (min-width: 576px) {
+  .todo {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .todo {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  .todo {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .todo {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .todo {
+    max-width: 500px;
+  }
 }
